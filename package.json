@@ -1,0 +1,15 @@
+{
+  "name": "node-influx",
+  "version": "0.1.0",
+  "description": "module to interact with influxdb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gilles De Mey <gilles@astromo.io>",
+  "license": "",
+  "dependencies": {
+    "request-promise": "^0.4.1"
+  },
+  "devDependencies": {}
+}
