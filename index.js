@@ -35,7 +35,12 @@ Influx.prototype.query = function(q) {
     json: true,
   })
   .then(function(res) {
-    return res.results;
+
+    if (res.results[0].hasOwnProperty('error'))
+      throw new Error(res.results[0].error);
+    else
+      return res;
+
   });
 };
 
